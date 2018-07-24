@@ -1,0 +1,3 @@
+author = Astrum
+version = 0.0.2.5
+displayName = The Phoenix Mod
