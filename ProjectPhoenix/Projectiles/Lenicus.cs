@@ -30,8 +30,8 @@ namespace ProjectPhoenix.Projectiles
 		 public override void AI()
         {
                                                                 //this is projectile dust
-            int DustID2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y + 2f), projectile.width + 2, projectile.height + 2, mod.DustType("DustName"), projectile.velocity.X * 0.2f, projectile.velocity.Y * 0.2f, 20, default(Color), 2.9f);
-            Main.dust[DustID2].noGravity = true;
+            //int DustID2 = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y + 2f), projectile.width + 2, projectile.height + 2, mod.DustType("DustName"), projectile.velocity.X * 0.2f, projectile.velocity.Y * 0.2f, 20, default(Color), 2.9f);
+            //Main.dust[DustID2].noGravity = true;
                                                           //this make that the projectile faces the right way
             projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + 1.57f;
             projectile.localAI[0] += 1f;
@@ -52,3 +52,8 @@ namespace ProjectPhoenix.Projectiles
             }
         }
 		
+	}
+}
+
+
+
