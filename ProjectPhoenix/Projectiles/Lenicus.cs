@@ -12,7 +12,7 @@ namespace ProjectPhoenix.Projectiles
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Lenicus");
-			Main.projFrames[projectile.type] = 7; //This is an animated projectile
+			Main.projFrames[projectile.type] = 20; //This is an animated projectile
 
 		}
 		public override void SetDefaults()
@@ -25,6 +25,8 @@ namespace ProjectPhoenix.Projectiles
 			projectile.magic = true;                        //this make the projectile do magic damage
             projectile.tileCollide = true;                 //this make that the projectile does not go thru walls
 			projectile.ignoreWater = true;
+			projectile.light = 0.8f;    // projectile light
+
 		}
 
 		 public override void AI()
@@ -41,11 +43,11 @@ namespace ProjectPhoenix.Projectiles
             {
                 projectile.Kill();
             }
-                       // Loop through the 56 animation frames, spending 15 ticks on each.
+                       // Loop through the 20 animation frames, spending 15 ticks on each.
             if (++projectile.frameCounter >= 15)
             {
                 projectile.frameCounter = 0;
-                if (++projectile.frame >= 56)
+                if (++projectile.frame >= 20)
                 {
                     projectile.frame = 0;
                 }

@@ -9,7 +9,7 @@ namespace ProjectPhoenix.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("crySomeMore.avi");
+			DisplayName.SetDefault("Can I have some help on this because i have np idesa kiwhat im foing ant it ducc thatsui ic have no ideaaaaaaaaaaaaa");
 			Tooltip.SetDefault("youDidWell.avi");
 		}
         public override void SetDefaults()
